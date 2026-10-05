@@ -1,0 +1,485 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "32e7e510-708e-4d48-badf-4389aec7d38f")
+	(paper "A4")
+	(lib_symbols)
+	(text "features:\n- low power mode: only RTC and GPS lock powered through Vbat\n- charge en flash with a ubsc port, extract sd data as well"
+		(exclude_from_sim no)
+		(at 51.816 25.654 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "69c69f99-6ed7-4316-b236-4ef9ab6db230")
+	)
+	(sheet
+		(at 82.2325 65.0875)
+		(size 23.8125 20.955)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "230d5bd3-a2ef-441e-8377-1dd29a4fa7e8")
+		(property "Sheetname" "Power delivery"
+			(at 81.915 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PD.kicad_sch"
+			(at 82.2325 83.4521 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "5V" output
+			(at 106.045 74.93 0)
+			(uuid "e6174570-e661-446d-9717-224dec6f9bea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V" output
+			(at 106.045 71.12 0)
+			(uuid "42b2154c-aa33-44ed-a4f7-b2e2630e8e2f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" output
+			(at 106.045 79.0575 0)
+			(uuid "7a27d001-4fd0-43fd-8d43-200d70f411be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MTU_3"
+				(path "/71802314-62e7-413b-a947-c9a8e80448a8/78696f4c-b26c-41e7-bc16-1e00b7378fbe"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 128.27)
+		(size 21.59 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4b0a69df-91db-4815-aebe-74e0bbedfce8")
+		(property "Sheetname" "Throttle"
+			(at 203.2 127.5584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Throttle.kicad_sch"
+			(at 203.2 136.4746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Throttle_Input" input
+			(at 203.2 132.08 180)
+			(uuid "6bb0d253-5481-4ef8-a913-d2049e3309a5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "MTU_3"
+				(path "/71802314-62e7-413b-a947-c9a8e80448a8/78696f4c-b26c-41e7-bc16-1e00b7378fbe"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 38.1)
+		(size 19.05 22.225)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "729c025d-dd84-47a2-9e95-53b5d23110cc")
+		(property "Sheetname" "CANbus"
+			(at 203.2 37.3884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CANbus.kicad_sch"
+			(at 203.2 60.9096 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CAN_H" input
+			(at 203.2 50.8 180)
+			(uuid "848098b1-4efc-4323-ad68-90cec3736961")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_L" input
+			(at 203.2 48.26 180)
+			(uuid "68536c0b-1c6e-4f27-8286-d07d044a2583")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_STBY" input
+			(at 203.2 45.72 180)
+			(uuid "3d1571f1-7a20-4d19-9755-4be58cb2a15e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "MTU_3"
+				(path "/71802314-62e7-413b-a947-c9a8e80448a8/78696f4c-b26c-41e7-bc16-1e00b7378fbe"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 66.04)
+		(size 19.05 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9647e046-3826-4a21-a15f-afe9ee9d97be")
+		(property "Sheetname" "SD"
+			(at 203.2 65.3284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SD.kicad_sch"
+			(at 203.2 89.4846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CLK" input
+			(at 203.2 82.55 180)
+			(uuid "536d0c08-be5b-475b-b6a7-431e1873f779")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CMD" input
+			(at 203.2 85.09 180)
+			(uuid "2499b328-ce77-4c29-a309-710619e4e0f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D0" input
+			(at 203.2 80.01 180)
+			(uuid "8c0197ea-de48-43c1-962b-5005a01e2313")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D1" input
+			(at 203.2 77.47 180)
+			(uuid "98064304-0d63-45bd-8ea5-8006648f1530")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D2" input
+			(at 203.2 74.93 180)
+			(uuid "3c18455a-410c-4a4b-a2ac-9bd1dd8bc752")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D3" input
+			(at 203.2 72.39 180)
+			(uuid "c8392390-edd0-443e-bc66-000eb0f5b658")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_Card_Detect" input
+			(at 203.2 69.85 180)
+			(uuid "f25e4600-cc69-4417-9043-4a8601cc832c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "MTU_3"
+				(path "/71802314-62e7-413b-a947-c9a8e80448a8/78696f4c-b26c-41e7-bc16-1e00b7378fbe"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 97.79)
+		(size 21.59 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b99f403f-57f2-4f11-83e8-e0456a3a78e3")
+		(property "Sheetname" "IO"
+			(at 81.28 97.0784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IO.kicad_sch"
+			(at 81.28 118.6946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_D+" input
+			(at 102.87 109.22 0)
+			(uuid "6d689225-3c6e-44aa-927a-66fa73ca0335")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_D-" input
+			(at 102.87 105.41 0)
+			(uuid "a15a71fd-8c6e-4694-8f0f-676747a727f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MTU_3"
+				(path "/71802314-62e7-413b-a947-c9a8e80448a8/78696f4c-b26c-41e7-bc16-1e00b7378fbe"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 95.25)
+		(size 19.05 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ecd19ba9-9597-491a-b66d-31f3d732f1c3")
+		(property "Sheetname" "UI_connector"
+			(at 203.2 94.5384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "UI_connector.kicad_sch"
+			(at 203.2 122.5046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "User_button" input
+			(at 203.2 96.52 180)
+			(uuid "1fa19c14-c443-4957-8ae9-54c189c20f49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "User_encoder_CLK" input
+			(at 203.2 99.06 180)
+			(uuid "4ab71de7-8fc5-48a5-8e85-b110527d1f23")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "User_encoder_DT" input
+			(at 203.2 101.6 180)
+			(uuid "8b4a3501-d96c-4ec5-8b1b-54b5a168d3ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "MTU_3"
+				(path "/71802314-62e7-413b-a947-c9a8e80448a8/78696f4c-b26c-41e7-bc16-1e00b7378fbe"
+					(page "3")
+				)
+			)
+		)
+	)
+)
